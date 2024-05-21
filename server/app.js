@@ -89,6 +89,9 @@ io.on('connection', (socket) => {
 
 })
 
+app.get('/',(req, res) => {
+    res.send("welcome");
+})
 
 app.use('/user', userRoutes);
 app.use('/room', roomRoutes);
